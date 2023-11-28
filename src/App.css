@@ -36,3 +36,114 @@
     transform: rotate(360deg);
   }
 }
+
+
+body {
+  background: #eeeee4;
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-container {
+  position: relative;
+  width: 70%;
+  height: 800px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.bug-card {
+  height: 600px;
+  margin-top: 30px;
+  border: 1px solid black;
+  background: white;
+  position: relative;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 43px;
+}
+
+.fab {
+  color: white;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 50px;
+  bottom: 25%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  background:rgb(73, 173, 223);;
+}
+
+
+
+.add-bug-container {
+  left: 250px;
+  width: 400px;
+  height: 200px;
+  background: white;
+  position: relative;
+}
+
+.bug-done {
+  color: blue;
+  text-decoration: line-through;
+}
+.bug-container{
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.bug-Head{
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.bug-id{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 20%;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+    display: flex;
+}
+.bug-des{
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  overflow-x: auto;
+}
+.bug-status{
+  border: 1px solid #ccc;
+  width: 20%;
+  padding: 10px;
+}
+.bug-status:focus-visible{
+  border: 1px solid #ccc;
+}
