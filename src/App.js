@@ -79,10 +79,11 @@ function App() {
   };
 
   const changeBugStatus = async (bugIndex, status) => {
+    
     const defaultAccount = await getAccount(web3);
     try {
       await contract?.methods
-        .updateBugStation(bugIndex, status)
+        .updateBugStatus(bugIndex, status)
         .send({ from: defaultAccount, gas: 3000000 });
       const updatedBugs = [...bugs];
       updatedBugs[bugIndex].status = status;
