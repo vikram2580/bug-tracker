@@ -2,7 +2,10 @@ name -Vikram Singh
 studen Id - 101501507
 
 //Install node module by using command  - npm install
-//Run Gananche on your system 
+//Run Ganache on your system 
+//Deploy given contract in remix (Change environment to Dev - ganache provider)
+//Update the contact address and ABI in contractConfig.js
+//Follow this path for configuration (./src/config/contractConfig.js)
 
 -----------------------------------------------------------------------
 //Solidity contract 
